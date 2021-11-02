@@ -1,0 +1,60 @@
+/* HEADER */
+header
+    pointer-events: none
+    width: 100%
+    position: absolute
+    top: 12px
+    left: 0
+    z-index: 2
+    > div
+        border-bottom: 1px solid $white
+    .navbar
+        pointer-events: auto
+        position: absolute
+        .container-fluid
+            .navbar-toggler
+                background: transparent !important
+                z-index: 1
+                height: 38px
+                width: 38px
+                padding: 0
+                align-items: center
+                justify-content: center
+            .collapse, .collapsing
+                transition-duration: 250ms
+                position: fixed
+                width: 100%
+                height: 100%
+                background: red
+                top: 0
+                left: 0
+                &:not(.show)
+                    transition-duration: 250ms
+                    pointer-events: none
+                    display: block
+                    opacity: 0
+                    ~ button
+                        span
+                            &:last-child
+                                display: none
+                &.show
+                    transition-duration: 250ms
+                    pointer-events: auto
+                    opacity: 1
+                    ~ button
+                        span
+                            &:first-child
+                                display: none
+                .navbar-nav
+                    justify-content: center
+                    align-items: center
+                    padding-top: 150px
+                    height: 100%
+                    a
+                        font-size: 28px
+                        font-weight: 500
+                        color: $white
+                        padding: 0
+                        &:hover
+                            color: $black
+

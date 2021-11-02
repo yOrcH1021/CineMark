@@ -1,0 +1,198 @@
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+}
+/* CLASSES */
+.logo-main {
+  height: 40px;
+}
+
+.separate ul, .after > div {
+  background: white;
+}
+
+.separate p, .separate p *, .after > div p {
+  color: black;
+}
+
+.separate div button {
+  box-shadow: inset 0 0 0 1px red !important;
+  margin-right: 10px;
+}
+.separate div input {
+  margin-top: 10px;
+  width: 173px;
+  padding-left: 8px;
+  height: 38px;
+  padding-bottom: 3px;
+}
+.separate div .buy {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* COLORS */
+/* VARIABLES */
+/* GENERAL STYLES */
+html, body {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+body {
+  background: black;
+}
+body:before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background: red;
+}
+
+* {
+  color: white;
+}
+
+input, dl, dd, dt {
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  outline: none !important;
+  box-shadow: none !important;
+  color: black !important;
+  background: white !important;
+  border: 1px solid white !important;
+  border-radius: 0 !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+button.active, button:hover {
+  color: white !important;
+  background: red !important;
+  border: 1px solid red !important;
+}
+
+h3, h4 {
+  color: red;
+}
+h3 span, h4 span {
+  position: relative;
+  width: 200px;
+  height: 6px;
+  display: flex;
+  left: calc(-3rem + 12px);
+  background: red;
+}
+
+/* HEADER */
+header {
+  pointer-events: none;
+  width: 100%;
+  position: absolute;
+  top: 12px;
+  left: 0;
+  z-index: 2;
+}
+header > div {
+  border-bottom: 1px solid #ffffff;
+}
+header .navbar {
+  pointer-events: auto;
+  position: absolute;
+}
+header .navbar .container-fluid .navbar-toggler {
+  background: transparent !important;
+  z-index: 1;
+  height: 38px;
+  width: 38px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+header .navbar .container-fluid .collapse, header .navbar .container-fluid .collapsing {
+  transition-duration: 250ms;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: red;
+  top: 0;
+  left: 0;
+}
+header .navbar .container-fluid .collapse:not(.show), header .navbar .container-fluid .collapsing:not(.show) {
+  transition-duration: 250ms;
+  pointer-events: none;
+  display: block;
+  opacity: 0;
+}
+header .navbar .container-fluid .collapse:not(.show) ~ button span:last-child, header .navbar .container-fluid .collapsing:not(.show) ~ button span:last-child {
+  display: none;
+}
+header .navbar .container-fluid .collapse.show, header .navbar .container-fluid .collapsing.show {
+  transition-duration: 250ms;
+  pointer-events: auto;
+  opacity: 1;
+}
+header .navbar .container-fluid .collapse.show ~ button span:first-child, header .navbar .container-fluid .collapsing.show ~ button span:first-child {
+  display: none;
+}
+header .navbar .container-fluid .collapse .navbar-nav, header .navbar .container-fluid .collapsing .navbar-nav {
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  height: 100%;
+}
+header .navbar .container-fluid .collapse .navbar-nav a, header .navbar .container-fluid .collapsing .navbar-nav a {
+  font-size: 28px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 0;
+}
+header .navbar .container-fluid .collapse .navbar-nav a:hover, header .navbar .container-fluid .collapsing .navbar-nav a:hover {
+  color: #000000;
+}
+
+/* MAIN */
+main {
+  background: #000000;
+  height: 100%;
+}
+
+.main {
+  border: 12px solid #ff0000;
+  position: relative;
+  min-height: 100%;
+}
+.main > div:first-child {
+  position: relative;
+}
+.main > div:first-child:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 250px 125px #000000, inset 0 -100px 100px 0 #000000;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.carousel-caption {
+  z-index: 1;
+}

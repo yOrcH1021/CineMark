@@ -1,0 +1,5 @@
+[
+    {"id": 1, "url": "movie/spaceJam.html", "name": "SPACE JAM. UNA NUEVA ERA", "date": "Jue, Jul 15 2021", "img": "https://score.procinal.com.co/mobilecomjson/imagenes/SPACE_JAM._UNA_NUEVA_ERA.jpg"},
+    {"id": 2, "url": "movie/freeGuy.html", "name": "FREE GUY. TOMANDO EL CONTROL", "date": "Jue, Ago 12 2021", "img": "https://score.procinal.com.co/mobilecomjson/imagenes/FREE_GUY._TOMANDO_EL_CONTROL.jpg"},
+    {"id": 3, "url": "movie/shangChi.html", "name": "SHANG-CHI Y LA LEYENDA DE LOS DIEZ ANILLOS", "date": "Jue, Sep 2 2021", "img": "https://score.procinal.com.co/mobilecomjson/imagenes/SHANG-CHI_Y_LA_LEYENDA_DE_LOS_DIEZ_ANILLOS.jpg"}
+]
