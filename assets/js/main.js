@@ -1,5 +1,5 @@
 
-const url = "https://yorch1021.github.io/CoderProject/assets/datos.json"
+const url = "https://yorch1021.github.io/CineMark/assets/js/datos.json"
 
 $("main > div").prepend('<div class="d-flex justify-content-center"><button class="btn mt-5">Ver Cartelera</button></div>');
 //Escuchamos el evento click del botón agregado
