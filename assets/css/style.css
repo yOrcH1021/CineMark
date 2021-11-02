@@ -60,6 +60,10 @@ body:before {
   background: red;
 }
 
+a {
+  text-decoration: none;
+}
+
 * {
   color: white;
 }
@@ -72,7 +76,7 @@ ul {
   list-style: none;
 }
 
-button {
+.btn {
   outline: none !important;
   box-shadow: none !important;
   color: black !important;
@@ -82,7 +86,7 @@ button {
   padding-left: 30px !important;
   padding-right: 30px !important;
 }
-button.active, button:hover {
+.btn.active, .btn:hover {
   color: white !important;
   background: red !important;
   border: 1px solid red !important;
@@ -191,6 +195,40 @@ main {
   left: 0;
   pointer-events: none;
   z-index: 1;
+}
+
+main .main {
+  padding-bottom: 100px;
+}
+main .main ul {
+  margin: 167px 0 0;
+  display: flex;
+  width: 100%;
+  padding: 0;
+}
+main .main ul li {
+  width: calc(100% / 3);
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+main .main ul li:nth-child(1), main .main ul li:nth-child(4) {
+  padding-right: 20px;
+}
+main .main ul li:nth-child(2), main .main ul li:nth-child(5) {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+main .main ul li:nth-child(3) {
+  padding-left: 20px;
+}
+main .main ul li:nth-child(1n+4) {
+  display: none;
+}
+main .main ul.allMovies {
+  display: inline-block;
+}
+main .main ul.allMovies li {
+  display: inline-block;
 }
 
 .carousel-caption {
