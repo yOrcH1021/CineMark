@@ -7,10 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>Cinemark</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <title>Cinemark - Tarifas</title>
 </head>
-<body class="home">
+<body class="rates">
 
     <!-- Loading HTML -->
     <div id="loading">
@@ -25,10 +25,10 @@
                 <div class="collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">CARTELERA</a>
+                            <a class="nav-link" href="../index.html">CARTELERA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/rates.html">TARIFAS</a>
+                            <a class="nav-link active" href="#">TARIFAS</a>
                         </li>
                     </ul>
                 </div>
@@ -39,17 +39,35 @@
             </div>
         </nav>
         <div class="position-relative d-flex justify-content-center w-100 py-5">
-            <a href="#">
-                <img class="logo-main" src="img/logo.png" alt="logo">
+            <a href="../index.html">
+                <img class="logo-main" src="../img/logo.png" alt="logo">
             </a>
         </div>
     </header>
-    <main>
-        <div class="main">
-            <ul class="px-5" id="movieList"></ul>
-            <div class="d-flex justify-content-center">
-                <a class="btn mt-5 moreMovies">Ver Todas las Peliculas</a>
-            </div>
+    <main class="h-100">
+        <div class="main d-flex flex-column align-items-center">
+            <h1 class="text-center text-uppercase m-5">tarifas 2021</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Precio</th>
+                        <th>2D</th>
+                        <th>3D</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes, Jueves, Viernes, Sabado y Domingo</td>
+                        <td>8000</td>
+                        <td>16000</td>
+                    </tr>
+                    <tr>
+                        <td>Martes y Miercoles</td>
+                        <td>4000</td>
+                        <td>8000</td>
+                    </tr>
+                </tbody>
+            </table>
 </div>
         <a class="toTop">
             <span class="material-icons">arrow_upward</span>
@@ -85,7 +103,7 @@
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="../assets/js/main.js"></script>
 
     <!-- Loading Javascript -->
     <script>

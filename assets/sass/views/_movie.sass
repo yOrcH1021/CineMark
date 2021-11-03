@@ -1,0 +1,51 @@
+.movie
+    .separate
+        ul
+            li
+                background: $white
+                + li
+                    margin-top: 20px
+                > div
+                    &.collapsing
+                        ~ button
+                            .add,
+                            .remove
+                                display: none
+                    &.collapse
+                        ~ button
+                            .remove
+                                display: none
+                        &.show
+                            ~ button
+                                .add
+                                    display: none
+                                .remove
+                                    display: block
+                > button
+                    background: transparent
+                    border: none
+                    padding: 0
+                    span
+                        color: $red
+        p, p *
+            color: black
+
+        div
+            .btn
+                box-shadow: inset 0 0 0 1px red !important
+                margin-right: 10px
+            input
+                margin-top: 10px
+                width: 173px
+                padding-left: 8px
+                height: 38px
+            .buy
+                border-radius: 0 !important
+    
+    .after
+        > div
+            &:nth-child(2)
+                background: white
+
+            p
+                color: black

@@ -27,3 +27,18 @@ $('.moreMovies').click(function() {
 $('.navbar-toggler').click(function() {
     $('body').toggleClass('wScroll');
 });
+
+// SCROLL TO TOP
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 500) {
+        $('.toTop').addClass('show');
+    } else {
+        $('.toTop').removeClass('show');
+    }
+});
+
+//Click event to scroll to top
+$('.toTop').click(function(){
+    $(window).scrollTop(0);
+});
+

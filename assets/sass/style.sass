@@ -1,12 +1,37 @@
 @import 'utilities/font'
 @import 'utilities/classes'
 @import 'utilities/variables'
-// @import 'utilities/loading'
+@import 'utilities/loading'
 @import 'general'
 @import 'layout/header'
 @import 'main'
 @import 'views/home'
+@import 'views/rates'
+@import 'views/movie'
 @import 'layout/footer'
 
 .carousel-caption
     z-index: 1
+
+.toTop
+    transition-duration: 250ms
+    justify-content: center
+    pointer-events: none
+    align-items: center
+    background: $black
+    position: fixed
+    cursor: pointer
+    display: flex
+    height: 38px
+    bottom: 28px
+    right: 40px
+    width: 38px
+    opacity: 0
+    &.show
+        pointer-events: auto
+        opacity: 1
+    *
+        color: $white
+    &:hover
+        background: $red
+

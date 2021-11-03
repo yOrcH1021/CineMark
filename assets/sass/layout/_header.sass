@@ -8,6 +8,8 @@ header
     z-index: 2
     > div
         border-bottom: 1px solid $white
+        a
+            pointer-events: auto
     .navbar
         pointer-events: auto
         position: absolute
@@ -55,6 +57,7 @@ header
                         font-weight: 500
                         color: $white
                         padding: 0
+                        &.active,
                         &:hover
                             color: $black
 
