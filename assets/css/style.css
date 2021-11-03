@@ -19,7 +19,7 @@
   color: black;
 }
 
-.separate div button {
+.separate div .btn {
   box-shadow: inset 0 0 0 1px red !important;
   margin-right: 10px;
 }
@@ -28,11 +28,9 @@
   width: 173px;
   padding-left: 8px;
   height: 38px;
-  padding-bottom: 3px;
 }
 .separate div .buy {
   border-radius: 0 !important;
-  box-shadow: none !important;
 }
 
 /* COLORS */
@@ -47,7 +45,7 @@ html, body {
 }
 
 body {
-  background: black;
+  background: #000000;
 }
 body:before {
   content: "";
@@ -57,7 +55,10 @@ body:before {
   z-index: 2;
   top: 0;
   left: 0;
-  background: red;
+  background: #ff0000;
+}
+body.wScroll {
+  overflow: hidden;
 }
 
 a {
@@ -65,11 +66,12 @@ a {
 }
 
 * {
-  color: white;
+  transition-duration: 250ms;
+  color: #ffffff;
 }
 
 input, dl, dd, dt {
-  color: black;
+  color: #000000;
 }
 
 ul {
@@ -79,21 +81,21 @@ ul {
 .btn {
   outline: none !important;
   box-shadow: none !important;
-  color: black !important;
-  background: white !important;
-  border: 1px solid white !important;
+  color: #000000 !important;
+  background: #ffffff !important;
+  border: 1px solid #ffffff !important;
   border-radius: 0 !important;
   padding-left: 30px !important;
   padding-right: 30px !important;
 }
 .btn.active, .btn:hover {
-  color: white !important;
-  background: red !important;
-  border: 1px solid red !important;
+  color: #ffffff !important;
+  background: #ff0000 !important;
+  border: 1px solid #ff0000 !important;
 }
 
 h3, h4 {
-  color: red;
+  color: #ff0000;
 }
 h3 span, h4 span {
   position: relative;
@@ -101,7 +103,11 @@ h3 span, h4 span {
   height: 6px;
   display: flex;
   left: calc(-3rem + 12px);
-  background: red;
+  background: #ff0000;
+}
+
+h5 {
+  color: #000000;
 }
 
 /* HEADER */
@@ -174,7 +180,6 @@ header .navbar .container-fluid .collapse .navbar-nav a:hover, header .navbar .c
 /* MAIN */
 main {
   background: #000000;
-  height: 100%;
 }
 
 .main {
@@ -197,38 +202,70 @@ main {
   z-index: 1;
 }
 
-main .main {
+.home main .main {
   padding-bottom: 100px;
 }
-main .main ul {
+.home main .main ul {
   margin: 167px 0 0;
   display: flex;
   width: 100%;
   padding: 0;
 }
-main .main ul li {
+.home main .main ul li {
   width: calc(100% / 3);
   padding-bottom: 20px;
   padding-top: 20px;
 }
-main .main ul li:nth-child(1), main .main ul li:nth-child(4) {
+.home main .main ul li:nth-child(1), .home main .main ul li:nth-child(4) {
   padding-right: 20px;
 }
-main .main ul li:nth-child(2), main .main ul li:nth-child(5) {
+.home main .main ul li:nth-child(2), .home main .main ul li:nth-child(5) {
   padding-left: 10px;
   padding-right: 10px;
 }
-main .main ul li:nth-child(3) {
+.home main .main ul li:nth-child(3) {
   padding-left: 20px;
 }
-main .main ul li:nth-child(1n+4) {
+.home main .main ul li:nth-child(1n+4) {
   display: none;
 }
-main .main ul.allMovies {
+.home main .main ul li div {
+  position: relative;
+  width: 100%;
+}
+.home main .main ul li img {
+  width: 100%;
+}
+.home main .main ul li span {
+  position: absolute;
+  margin-left: -50px;
+  margin-top: -19px;
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+}
+.home main .main ul li:hover img {
+  opacity: 0.5;
+}
+.home main .main ul li:hover span {
+  opacity: 1;
+}
+.home main .main ul.allMovies {
   display: inline-block;
 }
-main .main ul.allMovies li {
+.home main .main ul.allMovies li {
   display: inline-block;
+}
+
+/* FOOTER */
+footer {
+  background: #ffffff;
+}
+footer div > ul > li {
+  width: 25%;
+}
+footer div > ul > li li {
+  color: #000000;
 }
 
 .carousel-caption {

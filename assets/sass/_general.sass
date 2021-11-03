@@ -7,7 +7,7 @@ html, body
     height: 100%
 
 body
-    background: black
+    background: $black
     &:before
         content: ''
         position: absolute
@@ -16,16 +16,19 @@ body
         z-index: 2
         top: 0
         left: 0
-        background: red
+        background: $red
+    &.wScroll
+        overflow: hidden
 
 a
     text-decoration: none
 
 *
-    color: white
+    transition-duration: 250ms
+    color: $white
 
 input, dl, dd, dt
-    color: black
+    color: $black
 
 ul
     list-style: none
@@ -33,24 +36,27 @@ ul
 .btn
     outline: none !important
     box-shadow: none !important
-    color: black !important
-    background: white !important
-    border: 1px solid white !important
+    color: $black !important
+    background: $white !important
+    border: 1px solid $white !important
     border-radius: 0 !important
     padding-left: 30px !important
     padding-right: 30px !important
     &.active,
     &:hover
-        color: white !important
-        background: red !important
-        border: 1px solid red !important
+        color: $white !important
+        background: $red !important
+        border: 1px solid $red !important
 
 h3, h4
-    color: red
+    color: $red
     span
         position: relative
         width: 200px
         height: 6px
         display: flex
         left: calc(-3rem + 12px)
-        background: red
+        background: $red
+
+h5
+    color: $black

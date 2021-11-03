@@ -1,7 +1,7 @@
 [
-    {"id": 5, "url": "pages/movie/addams.html", "name": "LOS LOCOS ADDAMS 2", "date": "Oct 1 2021", "img": "https://yorch1021.github.io/CineMark/img/movie/addams/poster.jpg"},
-    {"id": 4, "url": "pages/movie/venom.html", "name": "VENOM CARNAGE LIBERADO", "date": "Oct 15 2021", "img": "https://yorch1021.github.io/CineMark/img/movie/venom/poster.jpg"},
-    {"id": 3, "url": "pages/movie/halloween.html", "name": "HALLOWEEN KILLS: LA NOCHE AÚN NO", "date": "Oct 15 2021", "img": "https://yorch1021.github.io/CineMark/img/movie/halloween/poster.jpg"},
-    {"id": 2, "url": "pages/movie/rons.html", "name": "RON DA ERROR", "date": "Oct 21 2021", "img": "https://yorch1021.github.io/CineMark/img/movie/rons/poster.jpg"},
-    {"id": 1, "url": "pages/movie/dune.html", "name": "DUNA", "date": "Oct 22 2021", "img": "https://yorch1021.github.io/CineMark/img/movie/dune/poster.jpg"}
+    {"id": 5, "url": "pages/movie/addams.html", "name": "LOS LOCOS ADDAMS 2", "date": "Oct, Vie 1 2021", "img": "https://yorch1021.github.io/CineMark/img/movie/addams/poster.jpg"},
+    {"id": 4, "url": "pages/movie/venom.html", "name": "VENOM CARNAGE LIBERADO", "date": "Oct, Vie 15 2021", "img": "https://yorch1021.github.io/CineMark/img/movie/venom/poster.jpg"},
+    {"id": 3, "url": "pages/movie/halloween.html", "name": "HALLOWEEN KILLS: LA NOCHE AÚN NO", "date": "Oct, Vie 15 2021", "img": "https://yorch1021.github.io/CineMark/img/movie/halloween/poster.jpg"},
+    {"id": 2, "url": "pages/movie/rons.html", "name": "RON DA ERROR", "date": "Oct, Jue 21 2021", "img": "https://yorch1021.github.io/CineMark/img/movie/rons/poster.jpg"},
+    {"id": 1, "url": "pages/movie/dune.html", "name": "DUNA", "date": "Oct, Vie 22 2021", "img": "https://yorch1021.github.io/CineMark/img/movie/dune/poster.jpg"}
 ]

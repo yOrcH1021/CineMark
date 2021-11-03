@@ -7,7 +7,10 @@ $.getJSON(url, function (answer, state) {
     for (const dato of misDatos) {
         $("#movieList").prepend(`<li>
                             <a href="${dato.url}" class="d-flex flex-column">
-                                <img src="${dato.img}">
+                                <div>
+                                    <img src="${dato.img}">
+                                    <span class="btn">Ver +</span>
+                                </div>
                                 <p class="m-0">${dato.date}</p>
                                 <h4 class="m-0">${dato.name}</h4>
                             </a>
@@ -19,4 +22,8 @@ $.getJSON(url, function (answer, state) {
 $('.moreMovies').click(function() {
     $('#movieList').addClass('allMovies');
     this.remove();
+});
+
+$('.navbar-toggler').click(function() {
+    $('body').toggleClass('wScroll');
 });
