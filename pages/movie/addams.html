@@ -22,9 +22,9 @@
         </div>
     </div>
 
-    <header class="py-0 px-5">
+    <header>
         <nav class="navbar p-0 h-100">
-            <div class="container-fluid">
+            <div class="container-fluid p-0">
                 <div class="collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -43,7 +43,7 @@
                 </button>
             </div>
         </nav>
-        <div class="position-relative d-flex justify-content-center w-100 py-5">
+        <div class="position-relative d-flex justify-content-end justify-content-sm-center w-100 py-md-5">
             <a href="../../index.html">
                 <img class="logo-main" src="../../img/logo.png" alt="logo">
             </a>
@@ -53,8 +53,8 @@
         <div class="main">
             <div>
                 <img src="../../img/movie/addams/main.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h1 class="text-uppercase m-0">Los locos Addams 2</h1>
+                <div class="carousel-caption d-block">
+                    <h1 class="text-uppercase m-0 px-3">Los locos Addams 2</h1>
                     <p class="m-0">Con la esperanza de acercarse como familia, Homero, Morticia y el resto del clan Addams se embarcan en un aventurero viaje por carretera en una horrenda y gigantesca caravana.</p>
                 </div>
             </div>
@@ -71,8 +71,8 @@
                 <div class="tab-content w-100" id="pills-tabContent">
                     <div class="tab-pane w-100 fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                         <p class="container my-5">Secuela de la película de animación La familia Addams (2019), que trae de regreso a la peculiar y macabra familia formada por Morticia y Gómez, junto con sus dos hijos, la siniestra adolescente Miércoles y Pugsley, un niño aficionado a toda clase de maldades.</p>
-                        <h3 class="container my-5 px-5 text-uppercase">
-                            <span class="my-5"></span>
+                        <h3 class="container my-5 px-4 px-md-5 text-uppercase">
+                            <span class="my-4 my-md-5"></span>
                             Esta segunda entrega está nuevamente basada en las viñetas creadas por Charles Addams en 1933 para la revista The New Yorker.
                         </h3>
                         <img class="img-fluid" src="../../img/movie/addams/1.jpg">
@@ -85,17 +85,17 @@
                         aria-labelledby="pills-profile-tab">
                         <div class="before">
                             <h2 class="text-center m-5">SELECCIONA UNA FECHA</h2>
-                            <ul class="d-flex justify-content-center mb-5 p-0 days">
-                                <li class="px-2">
+                            <ul class="d-flex flex-column flex-md-row align-items-center justify-content-center mb-5 p-0 days">
+                                <li class="mb-2 mb-md-0 px-2">
                                     <button id="button1" class="btn">Nov, Mar 02</button>
                                 </li>
-                                <li class="px-2">
+                                <li class="mb-2 mb-md-0 px-2">
                                     <button id="button2" class="btn">Nov, Mie 03</button>
                                 </li>
-                                <li class="px-2">
+                                <li class="mb-2 mb-md-0 px-2">
                                     <button id="button3" class="btn">Nov, Jue 04</button>
                                 </li>
-                                <li class="px-2">
+                                <li class="mb-2 mb-md-0 px-2">
                                     <button id="button4" class="btn">Nov, Vie 05</button>
                                 </li>
                             </ul>
@@ -163,24 +163,26 @@
                         </div>
                         <div class="container after mb-5" style="display: none;">
                             <h2 class="text-center m-5">DESCRIPCIÓN DE LA COMPRA</h2>
-                            <div class="d-flex row p-5">
+                            <div class="d-flex flex-column p-4 p-md-5">
                                 <h4 class="m-0"></h4>
                                 <p></p>
-                                <div class="col">
-                                    <dt>Dia</dt>
-                                    <dd id="day"></dd>
-                                </div>
-                                <div class="col">
-                                    <dt>Formato</dt>
-                                    <dd id="format"></dd>
-                                </div>
-                                <div class="col">
-                                    <dt>Numero de Boletas</dt>
-                                    <dd id="numberOfEntries"></dd>
-                                </div>
-                                <div class="col">
-                                    <dt>Valor</dt>
-                                    <dd id="total"></dd>
+                                <div class="flex-column flex-md-row row">
+                                    <div class="col">
+                                        <dt>Dia</dt>
+                                        <dd id="day"></dd>
+                                    </div>
+                                    <div class="col">
+                                        <dt>Formato</dt>
+                                        <dd id="format"></dd>
+                                    </div>
+                                    <div class="col">
+                                        <dt>Numero de Boletas</dt>
+                                        <dd id="numberOfEntries"></dd>
+                                    </div>
+                                    <div class="col">
+                                        <dt>Valor</dt>
+                                        <dd id="total"></dd>
+                                    </div>
                                 </div>
                             </div>
                             <h1 class="text-center mt-5 mx-5 mb-4 congratulations">GRACIAS, VUELVA PRONTO</h1>

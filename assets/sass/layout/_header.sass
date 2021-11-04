@@ -3,9 +3,10 @@ header
     pointer-events: none
     width: 100%
     position: absolute
-    top: 12px
+    top: 6px
     left: 0
     z-index: 2
+    padding: 0 31px
     > div
         border-bottom: 1px solid $white
         a
@@ -60,4 +61,11 @@ header
                         &.active,
                         &:hover
                             color: $black
+        ~ div
+            padding: 31px 0
 
+/* MEDIA */
+@media (min-width: 768px)
+    header
+        padding: 0 62px
+        top: 12px

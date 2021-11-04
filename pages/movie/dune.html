@@ -22,9 +22,9 @@
         </div>
     </div>
 
-    <header class="py-0 px-5">
+    <header>
         <nav class="navbar p-0 h-100">
-            <div class="container-fluid">
+            <div class="container-fluid p-0">
                 <div class="collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -43,7 +43,7 @@
                 </button>
             </div>
         </nav>
-        <div class="position-relative d-flex justify-content-center w-100 py-5">
+        <div class="position-relative d-flex justify-content-end justify-content-sm-center w-100 py-md-5">
             <a href="../../index.html">
                 <img class="logo-main" src="../../img/logo.png" alt="logo">
             </a>
@@ -53,8 +53,8 @@
         <div class="main">
             <div>
                 <img src="../../img/movie/dune/main.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h1 class="text-uppercase m-0">Dune</h1>
+                <div class="carousel-caption d-block">
+                    <h1 class="text-uppercase m-0 px-3">Dune</h1>
                     <p class="m-0">La superproducción está dirigida por Denis Villeneuve, protagonizada por Timothée Chalamet y Zendaya, sobre la novela de Frank Herbert</p>
                 </div>
             </div>
@@ -71,8 +71,8 @@
                 <div class="tab-content w-100" id="pills-tabContent">
                     <div class="tab-pane w-100 fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                         <p class="container my-5">Duna es la nueva versión del film de ciencia ficción dirigido por Denis Villeneuve, protagonizada por Timothée Chalamet y Zendaya, sobre la clásica novela de Frank Herbert cuya primera adaptación fue realizada David Lynch en 1984. La épica superproducción de alto presupuesto, llega esta semana a los cines de Latinoamérica y a la plataforma HBO Max en simultáneo en Estados Unidos. Para el resto de los mercados, habrá que esperar al menos un mes para su desembarco en la plataforma.</p>
-                        <h3 class="container my-5 px-5 text-uppercase">
-                            <span class="my-5"></span>
+                        <h3 class="container my-5 px-4 px-md-5 text-uppercase">
+                            <span class="my-4 my-md-5"></span>
                             La película “Dune” transcurre diez mil años en el futuro, cuando las familias nobles de la galaxia se disputan por el control de los planetas. El más codiciado de ellos es Arrakis, conocido como Dune, donde se encuentra el bien más preciado: la especia. Quien controle su producción, tendrá el control de la galaxia..
                         </h3>
                         <img class="img-fluid" src="../../img/movie/dune/1.jpg">
@@ -80,8 +80,8 @@
                         <img class="img-fluid" src="../../img/movie/dune/2.jpg">
                         <p class="container mt-5">El film muestra el viaje de Paul Atreides, este héroe mítico y cargado de emociones, un joven brillante y talentoso con un gran destino más allá de su comprensión, que debe viajar al planeta más peligroso del universo para asegurar el futuro de su familia y su gente.</p>
                         <p class="container mb-5">A medida que las fuerzas malévolas estallan en un conflicto por el suministro exclusivo del planeta del recurso más preciado que existe, un bien capaz de liberar el mayor potencial de la humanidad, solo sobre vivirán aquellos que puedan conquistar su miedo. Así, deberán enfrentar poderes indómitos, gusanos de arena colosales, tormentas de arena y villanos, pero solo el tiempo dirá qué será de su mundo.</p>
-                        <h3 class="container my-5 px-5 text-uppercase">
-                            <span class="my-5"></span>
+                        <h3 class="container my-5 px-4 px-md-5 text-uppercase">
+                            <span class="my-4 my-md-5"></span>
                             El director canadiense Denis Villeneuve (“La Llegada”, “Blade Runner 2049”) dirigió la película “Dune”, a partir de un guion que coescribió con Jon Spaihts y Eric Roth basado en la novela del mismo nombre escrita por Frank Herbert.
                         </h3>
                         <img class="img-fluid" src="../../img/movie/dune/4.jpg">
@@ -95,17 +95,17 @@
                         aria-labelledby="pills-profile-tab">
                         <div class="before">
                             <h2 class="text-center m-5">SELECCIONA UNA FECHA</h2>
-                            <ul class="d-flex justify-content-center mb-5 p-0 days">
-                                <li class="px-2">
+                            <ul class="d-flex flex-column flex-md-row align-items-center justify-content-center mb-5 p-0 days">
+                                <li class="mb-2 mb-md-0 px-2">
                                     <button id="button1" class="btn">Nov, Mar 02</button>
                                 </li>
-                                <li class="px-2">
+                                <li class="mb-2 mb-md-0 px-2">
                                     <button id="button2" class="btn">Nov, Mie 03</button>
                                 </li>
-                                <li class="px-2">
+                                <li class="mb-2 mb-md-0 px-2">
                                     <button id="button3" class="btn">Nov, Jue 04</button>
                                 </li>
-                                <li class="px-2">
+                                <li class="mb-2 mb-md-0 px-2">
                                     <button id="button4" class="btn">Nov, Vie 05</button>
                                 </li>
                             </ul>
@@ -173,24 +173,26 @@
                         </div>
                         <div class="container after mb-5" style="display: none;">
                             <h2 class="text-center m-5">DESCRIPCIÓN DE LA COMPRA</h2>
-                            <div class="d-flex row p-5">
+                            <div class="d-flex flex-column p-4 p-md-5">
                                 <h4 class="m-0"></h4>
                                 <p></p>
-                                <div class="col">
-                                    <dt>Dia</dt>
-                                    <dd id="day"></dd>
-                                </div>
-                                <div class="col">
-                                    <dt>Formato</dt>
-                                    <dd id="format"></dd>
-                                </div>
-                                <div class="col">
-                                    <dt>Numero de Boletas</dt>
-                                    <dd id="numberOfEntries"></dd>
-                                </div>
-                                <div class="col">
-                                    <dt>Valor</dt>
-                                    <dd id="total"></dd>
+                                <div class="flex-column flex-md-row row">
+                                    <div class="col">
+                                        <dt>Dia</dt>
+                                        <dd id="day"></dd>
+                                    </div>
+                                    <div class="col">
+                                        <dt>Formato</dt>
+                                        <dd id="format"></dd>
+                                    </div>
+                                    <div class="col">
+                                        <dt>Numero de Boletas</dt>
+                                        <dd id="numberOfEntries"></dd>
+                                    </div>
+                                    <div class="col">
+                                        <dt>Valor</dt>
+                                        <dd id="total"></dd>
+                                    </div>
                                 </div>
                             </div>
                             <h1 class="text-center mt-5 mx-5 mb-4 congratulations">GRACIAS, VUELVA PRONTO</h1>

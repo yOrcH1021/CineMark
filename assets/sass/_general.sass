@@ -11,7 +11,7 @@ body
     &:before
         content: ''
         position: absolute
-        height: 12px
+        height: 6px
         width: 100%
         z-index: 2
         top: 0
@@ -60,3 +60,9 @@ h3, h4
 
 h5
     color: $black
+
+/* MEDIA */
+@media (min-width: 768px)
+    body
+        &:before
+            height: 12px

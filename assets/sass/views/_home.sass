@@ -3,25 +3,13 @@
         .main
             padding-bottom: 100px
             ul
-                margin: 167px 0 0
+                flex-direction: column
+                margin: 112px 0 0
+                padding: 0 25px
                 display: flex
                 width: 100%
-                padding: 0
                 li
-                    width: calc(100% / 3)
-                    padding-bottom: 20px
-                    padding-top: 20px
-                    &:nth-child(1),
-                    &:nth-child(4)
-                        padding-right: 20px
-                    &:nth-child(2),
-                    &:nth-child(5)
-                        padding-left: 10px
-                        padding-right: 10px
-                    &:nth-child(3)
-                        padding-left: 20px
-                    &:nth-child(1n+4)
-                        display: none
+                    width: 100%
                     div
                         margin-bottom: 20px
                         position: relative
@@ -40,8 +28,42 @@
                             opacity: .5
                         span
                             opacity: 1
+                    + li
+                        margin-top: 50px
                 &.allMovies
                     display: inline-block
                     li
                         display: inline-block
+                ~ div
+                    display: none !important
+
+/* MEDIA */
+@media (min-width: 768px)
+    .home
+        main
+            .main
+                padding-bottom: 100px
+                ul
+                    flex-direction: row
+                    margin: 167px 0 0
+                    padding: 0 50px
+                    li
+                        width: calc(100% / 3)
+                        padding-bottom: 20px
+                        padding-top: 20px
+                        &:nth-child(1),
+                        &:nth-child(4)
+                            padding-right: 20px
+                        &:nth-child(2),
+                        &:nth-child(5)
+                            padding-left: 10px
+                            padding-right: 10px
+                        &:nth-child(3)
+                            padding-left: 20px
+                        &:nth-child(1n+4)
+                            display: none
+                        + li
+                            margin: 0
+                    ~ div
+                        display: flex !important
                     
