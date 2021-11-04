@@ -290,12 +290,6 @@ main {
 .home main .main ul li + li {
   margin-top: 50px;
 }
-.home main .main ul.allMovies {
-  display: inline-block;
-}
-.home main .main ul.allMovies li {
-  display: inline-block;
-}
 .home main .main ul ~ div {
   display: none !important;
 }
@@ -330,6 +324,12 @@ main {
   }
   .home main .main ul li + li {
     margin: 0;
+  }
+  .home main .main ul.allMovies {
+    display: inline-block;
+  }
+  .home main .main ul.allMovies li {
+    display: inline-block;
   }
   .home main .main ul ~ div {
     display: flex !important;
